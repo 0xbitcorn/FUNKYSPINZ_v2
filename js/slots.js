@@ -54,12 +54,12 @@ var reels_bg = new Image();
 var snd_reel_stop = new Array();
 var snd_win;
 
-reels_bg.src = "./assets/images/background/LuckyFUNKZ_transparent.png";
+reels_bg.src = "./assets/images/ui/background/LuckyFUNKZ.png";
 
-snd_win = new Audio("audio/win.wav");
-snd_reel_stop[0] = new Audio("audio/reel_stop.wav");
-snd_reel_stop[1] = new Audio("audio/reel_stop.wav");
-snd_reel_stop[2] = new Audio("audio/reel_stop.wav");
+snd_win = new Audio("assets/audio/win.wav");
+snd_reel_stop[0] = new Audio("assets/audio/reel_stop.wav");
+snd_reel_stop[1] = new Audio("assets/audio/reel_stop.wav");
+snd_reel_stop[2] = new Audio("assets/audio/reel_stop.wav");
 
 // enums
 var STATE_REST = 0;
@@ -510,4 +510,24 @@ function updateButtonPanelWidth(buttonPanel) {
     if (!buttonPanel) return;
     buttonPanel.style.height = "10%";
     buttonPanel.style.width = window.innerHeight * 0.65 + "px";
+}
+
+
+//----- Autospin Functions -----------------------------------------------
+// Autospin functions
+function AutoSpin_On() {
+    $("#autoSpinButton").removeClass("off");
+    $("#autoSpinButton").addClass("on");
+}
+
+function AutoSpin_Off() {
+    $("#autoSpinButton").removeClass("on");
+    $("#autoSpinButton").addClass("off");
+}
+
+function AutoSpin_Toggle() {
+    if ($("#autoSpinButton").hasClass("off"))
+        AutoSpin_On();
+    else
+        AutoSpin_Off();
 }

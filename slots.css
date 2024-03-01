@@ -7,17 +7,14 @@ html,body {
     overflow-x: hidden;
 }
 
-/*Gameplay area*/
 canvas {
     height: 100%;
     width: auto;
     position: absolute;
 }
 
-/*The wrapper determines the overall background and canvas size for the game, everything else is in relation to this*/
 #wrapper {
     margin: 0 auto;
-    /*background: url(./assets/images/background/LuckyFUNKZ.png);*/
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +34,6 @@ canvas {
     position: absolute;
 }
 
-/*CSS for the auto play button*/
 #autoSpinButton {
     height:80%;
     aspect-ratio:16/9;
@@ -62,7 +58,7 @@ canvas {
     background-size: 100% 100%;
 }
 
-/*CSS for the line button*/
+
 #lineButton{
     background: url('./assets/images/ui/buttons/lines_unpressed.png');
     background-size: 100% 100%;
@@ -83,7 +79,6 @@ canvas {
 
 }
 
-/*CSS for the bet one button*/
 #betButton{
     background: url('./assets/images/ui/buttons/bet_one_unpressed.png');
     background-size: 100% 100%;
@@ -103,9 +98,7 @@ canvas {
     background-size: 100% 100%;
 }
 
-/*CSS for the max bet button*/
 #maxBetButton{
-
     background: url('./assets/images/ui/buttons/bet_max_unpressed.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -123,7 +116,6 @@ canvas {
     background-size: 100% 100%;
 }
 
-/*CSS for the spin button*/
 #spinButton{
     background: url('./assets/images/ui/buttons/spin_unpressed.png');
     background-size: 100% 100%;
